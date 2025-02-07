@@ -18,10 +18,32 @@ namespace TrendletProductsCalculater.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        [Route("Bags")]
+        public IActionResult Bags()
         {
             return View();
         }
+
+
+        [Route("Clothes")]
+        public IActionResult Clothes()
+        {
+            return View();
+        }
+
+        [Route("Shoes")]
+        public IActionResult Shoes()
+        {
+            return View();
+        }
+
+        [Route("Accessories")]
+        public IActionResult Accessories()
+        {
+            return View();
+        }
+
+       
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

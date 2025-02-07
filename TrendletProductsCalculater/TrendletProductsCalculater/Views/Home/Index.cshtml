@@ -1,8 +1,58 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-}
+} <style>
+      a:hover {
+          color: #212529;
+      } 
+      .product-square {
+          height: 300px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          color: #fff;
+          text-decoration: none;
+          background-color: rgba(250, 176, 5, 0.8); /* Semi-transparent background */
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Subtle shadow for depth */
+          transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+          border-radius: 10px; /* Rounded corners for a softer look */
+      }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+          .product-square:hover {
+              transform: scale(1.05); /* Slightly enlarge on hover */
+              box-shadow: 0 12px 24px 0 rgba(0,0,0,0.3); /* Enhance shadow on hover */
+          }
+
+      .bg-custom {
+          background-color: #FAB005; /* Placeholder for logo color, adjust as needed */
+      }
+</style>
+ 
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4">
+            <a href="/bags" class="product-square bg-custom">
+                <i class="fas fa-shopping-bag fa-3x"></i>
+                <h2>Bags</h2>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+            <a href="/shoes" class="product-square bg-custom">
+                <i class="fas fa-shoe-prints fa-3x"></i>
+                <h2>Shoes</h2>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+            <a href="/clothes" class="product-square bg-custom">
+                <i class="fas fa-tshirt fa-3x"></i>
+                <h2>Clothes</h2>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+            <a href="/accessories" class="product-square bg-custom">
+                <i class="fas fa-ring fa-3x"></i>
+                <h2>Accessories</h2>
+            </a>
+        </div>
+    </div>
 </div>
