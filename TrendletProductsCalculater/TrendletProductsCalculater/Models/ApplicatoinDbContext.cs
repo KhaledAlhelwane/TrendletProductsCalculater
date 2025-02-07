@@ -11,5 +11,11 @@ namespace TrendletProductsCalculater.Models
         {
                 
         }
+
+        DbSet<Product> products { get; set; }
+        DbSet<ProductType> productsType { get; set; }
+        DbSet<Tax> taxes { get; set; }
+        DbSet<Discount> discounts { get; set; }
+
     }
 }

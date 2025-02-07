@@ -1,8 +1,9 @@
 ﻿namespace TrendletProductsCalculater.Models
 {
-    public class Discount:BaseClass
+    public class Discount
     {
-        public decimal FirstDiscount { get; set; }
-        public decimal SecoundDiscount { get; set; }
+        public int Id { get; set; }
+        public double FirstDiscount { get; set; }
+        public double SecoundDiscount { get; set; }
     }
 }

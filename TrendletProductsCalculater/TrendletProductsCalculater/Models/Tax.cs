@@ -1,8 +1,12 @@
-﻿namespace TrendletProductsCalculater.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace TrendletProductsCalculater.Models
 {
-    public class Tax: BaseClass
+    [Table("taxes")]
+    public class Tax
     {
+        public int Id { get; set; } 
         public int Name { get; set; }
-        public decimal Value { get; set; }
+        public double Value { get; set; }
     }
 }
