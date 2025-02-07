@@ -8,5 +8,11 @@ namespace TrendletProductsCalculater.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public double AddedPrice { get; set; }
+
+        [ForeignKey("Product")]
+        public int ProductId { get; set; }
+
+        // Navigation Property
+        public Product Product { get; set; }
     }
 }
